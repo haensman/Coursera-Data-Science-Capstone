@@ -86,7 +86,7 @@ def get_scatter_chart(entered_site, payload_range):
                     title='Payload vs Success rate')
 
     else:
-        filtered_df = =payload_df[payload_df['Launch Site'] == entered_site]
+        filtered_df = payload_df[payload_df['Launch Site'] == entered_site]
         fig = px.scatter(filtered_df, x='Payload Mass (kg)', y='class',
                     color='Booster Version Category',
                     title='Payload vs Success rate')
